@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <title>Estate Admin</title>
+
+    <!-- font link  -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700" rel="stylesheet">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/boostrap.css" />
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/morris.css" />
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/jquery-jvectormap-2.0.3.css" />
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/adminnine.css" />
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/font-awesome.min.css" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <!-- <body> -->
+
+
+<!--  <div class="loader"><h1 class="loadingtext">Estate<span>Admin</span></h1><p>Awesome things getting ready...</p>
+    <br><img src="https://maxartkiller.com/website/admin9/admin9/img/loader2.gif" alt="">
+  </div>-->
+
+<!--https://maxartkiller.com/website/admin9/admin9/pages/index.html-->
+  <!-- /.panel .chat-panel -->
+  <!--<button class="btn btn-primary chatbtn"><i class="fa fa-comments"></i></button>
+  <div class="feedback">
+    <button class="btn btn-primary feedbackbtn"><i class="fa  fa-comment-o"></i></button>
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <div class="page-header small">Hello, Lucky Sans,</div>
+        <div class="page-subtitle small">Please prvide your detailed feedback to us.</div>
+      </div>
+      <div class="panel-body">
+        <textarea class="form-control" placeholder="Write your feedback here"></textarea>
+      </div>
+      <div class="panel-footer">
+        <button class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </div>-->
+
+
+<body>
+
+
+     
+ <div id="root"></div>
+
+<div class="chat-panel panel panel-default">
+  <div class="panel-heading"> <i class="fa fa-comments fa-fw"></i> Chat
+    <div class="btn-group pull-right">
+      <button type="button" class="dotbtn dropdown-toggle" data-toggle="dropdown"> <i class="dots"></i> </button>
+      <ul class="dropdown-menu slidedown">
+        <li> <a href="javascript:void(0)"> <i class="fa fa-refresh fa-fw"></i> Refresh </a> </li>
+        <li> <a href="javascript:void(0)"> <i class="fa fa-check-circle fa-fw"></i> Available </a> </li>
+        <li> <a href="javascript:void(0)"> <i class="fa fa-times fa-fw"></i> Busy </a> </li>
+        <li> <a href="javascript:void(0)"> <i class="fa fa-clock-o fa-fw"></i> Away </a> </li>
+        <li> <a href="javascript:void(0)"> <i class="fa fa-sign-out fa-fw"></i> Sign Out </a> </li>
+      </ul>
+    </div>
+  </div>
+  <!-- /.panel-heading -->
+  <div class="panel-body no-padding">
+    <ul class="nav nav-tabs">
+      <li class="active"><a href="#friends" data-toggle="tab">Friends</a> </li>
+      <li><a href="#chat" data-toggle="tab">Chat</a> </li>
+    </ul>
+    
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div class="tab-pane fade in active" id="friends">
+        <table class="table table-bordered table-hover" >
+          <tbody>
+            <tr>
+              <td><img src="https://maxartkiller.com/website/admin9/admin9/img/pic1.png" alt="" class="gridpic">
+                <div class="textcontainer">
+                  <h3 class="usernamelist">John Doe</h3>
+                  <p>Designer, India</p>
+                </div>
+                <span class="online"></span></td>
+            </tr>
+            <tr>
+              <td><img src="https://maxartkiller.com/website/admin9/admin9/img/pic2.png" alt="" class="gridpic">
+                <div class="textcontainer">
+                  <h3 class="usernamelist">Steave Donald</h3>
+                  <p>Designer, India</p>
+                </div>
+                <span class="online"></span></td>
+            </tr>
+            <tr>
+              <td><img src="https://maxartkiller.com/website/admin9/admin9/img/pic3.png" alt="" class="gridpic">
+                <div class="textcontainer">
+                  <h3 class="usernamelist">Astha Smith</h3>
+                  <p>Designer, India</p>
+                </div></td>
+            </tr>
+            <tr>
+              <td><img src="https://maxartkiller.com/website/admin9/admin9/img/pic4.png" alt="" class="gridpic">
+                <div class="textcontainer">
+                  <h3 class="usernamelist">Lucky Sans</h3>
+                  <p>Designer, India</p>
+                </div></td>
+            </tr>
+              <tr>
+              <td><img src="https://maxartkiller.com/website/admin9/admin9/img/pic1.png" alt="" class="gridpic">
+                <div class="textcontainer">
+                  <h3 class="usernamelist">John Doe</h3>
+                  <p>Designer, India</p>
+                </div>
+                <span class="online"></span></td>
+            </tr>
+            <tr>
+              <td><img src="https://maxartkiller.com/website/admin9/admin9/img/pic2.png" alt="" class="gridpic">
+                <div class="textcontainer">
+                  <h3 class="usernamelist">Steave Donald</h3>
+                  <p>Designer, India</p>
+                </div>
+                <span class="online"></span></td>
+            </tr>
+            <tr>
+              <td><img src="https://maxartkiller.com/website/admin9/admin9/img/pic3.png" alt="" class="gridpic">
+                <div class="textcontainer">
+                  <h3 class="usernamelist">Astha Smith</h3>
+                  <p>Designer, India</p>
+                </div></td>
+            </tr>
+            <tr>
+              <td><img src="https://maxartkiller.com/website/admin9/admin9/img/pic4.png" alt="" class="gridpic">
+                <div class="textcontainer">
+                  <h3 class="usernamelist">Lucky Sans</h3>
+                  <p>Designer, India</p>
+                </div></td>
+            </tr>
+              <tr>
+              <td><img src="https://maxartkiller.com/website/admin9/admin9/img/pic1.png" alt="" class="gridpic">
+                <div class="textcontainer">
+                  <h3 class="usernamelist">John Doe</h3>
+                  <p>Designer, India</p>
+                </div>
+                <span class="online"></span></td>
+            </tr>
+            <tr>
+              <td><img src="https://maxartkiller.com/website/admin9/admin9/img/pic2.png" alt="" class="gridpic">
+                <div class="textcontainer">
+                  <h3 class="usernamelist">Steave Donald</h3>
+                  <p>Designer, India</p>
+                </div>
+                <span class="online"></span></td>
+            </tr>
+            <tr>
+              <td><img src="https://maxartkiller.com/website/admin9/admin9/img/pic3.png" alt="" class="gridpic">
+                <div class="textcontainer">
+                  <h3 class="usernamelist">Astha Smith</h3>
+                  <p>Designer, India</p>
+                </div></td>
+            </tr>
+            <tr>
+              <td><img src="https://maxartkiller.com/website/admin9/admin9/img/pic4.png" alt="" class="gridpic">
+                <div class="textcontainer">
+                  <h3 class="usernamelist">Lucky Sans</h3>
+                  <p>Designer, India</p>
+                </div></td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+      <div class="tab-pane fade padding" id="chat">
+        <ul class="chat">
+          <li class="left clearfix"> <span class="chat-img pull-left"> <img src="https://maxartkiller.com/website/admin9/admin9/img/pic4.png" alt="User Avatar" class="img-circle" /> </span>
+            <div class="chat-body clearfix">
+              <div class="header"> <strong class="primary-font">John Smith</strong> <small class="pull-right text-muted"> <i class="fa fa-clock-o fa-fw"></i> 12 mins ago </small> </div>
+              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales. </p>
+            </div>
+          </li>
+          <li class="right clearfix"> <span class="chat-img pull-right"> <img src="https://maxartkiller.com/website/admin9/admin9/img/pic2.png" alt="User Avatar" class="img-circle" /> </span>
+            <div class="chat-body clearfix">
+              <div class="header"> <small class=" text-muted"> <i class="fa fa-clock-o fa-fw"></i> 13 mins ago</small> <strong class="pull-right primary-font">Lucky Sans</strong> </div>
+              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales. </p>
+            </div>
+          </li>
+          <li class="left clearfix"> <span class="chat-img pull-left"> <img src="https://maxartkiller.com/website/admin9/admin9/img/pic4.png" alt="User Avatar" class="img-circle" /> </span>
+            <div class="chat-body clearfix">
+              <div class="header"> <strong class="primary-font">John Smith</strong> <small class="pull-right text-muted"> <i class="fa fa-clock-o fa-fw"></i> 14 mins ago</small> </div>
+              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales. </p>
+            </div>
+          </li>
+          <li class="right clearfix"> <span class="chat-img pull-right"> <img src="https://maxartkiller.com/website/admin9/admin9/img/pic2.png" alt="User Avatar" class="img-circle" /> </span>
+            <div class="chat-body clearfix">
+              <div class="header"> <small class=" text-muted"> <i class="fa fa-clock-o fa-fw"></i> 15 mins ago</small> <strong class="pull-right primary-font">Lucky Sans</strong> </div>
+              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales. </p>
+            </div>
+          </li>
+          <li class="left clearfix"> <span class="chat-img pull-left"> <img src="https://maxartkiller.com/website/admin9/admin9/img/pic4.png" alt="User Avatar" class="img-circle" /> </span>
+            <div class="chat-body clearfix">
+              <div class="header"> <strong class="primary-font">John Smith</strong> <small class="pull-right text-muted"> <i class="fa fa-clock-o fa-fw"></i> 12 mins ago </small> </div>
+              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales. </p>
+            </div>
+          </li>
+          <li class="right clearfix"> <span class="chat-img pull-right"> <img src="https://maxartkiller.com/website/admin9/admin9/img/pic2.png" alt="User Avatar" class="img-circle" /> </span>
+            <div class="chat-body clearfix">
+              <div class="header"> <small class=" text-muted"> <i class="fa fa-clock-o fa-fw"></i> 13 mins ago</small> <strong class="pull-right primary-font">Lucky Sans</strong> </div>
+              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales. </p>
+            </div>
+          </li>
+          <li class="left clearfix"> <span class="chat-img pull-left"> <img src="https://maxartkiller.com/website/admin9/admin9/img/pic4.png" alt="User Avatar" class="img-circle" /> </span>
+            <div class="chat-body clearfix">
+              <div class="header"> <strong class="primary-font">John Smith</strong> <small class="pull-right text-muted"> <i class="fa fa-clock-o fa-fw"></i> 14 mins ago</small> </div>
+              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales. </p>
+            </div>
+          </li>
+          <li class="right clearfix"> <span class="chat-img pull-right"> <img src="https://maxartkiller.com/website/admin9/admin9/img/pic2.png" alt="User Avatar" class="img-circle" /> </span>
+            <div class="chat-body clearfix">
+              <div class="header"> <small class=" text-muted"> <i class="fa fa-clock-o fa-fw"></i> 15 mins ago</small> <strong class="pull-right primary-font">Lucky Sans</strong> </div>
+              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales. </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- /.panel-body -->
+  <div class="panel-footer">
+    <div class="input-group">
+      <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your message here..." />
+      <span class="input-group-btn">
+      <button class="btn btn-success btn-sm" id="btn-chat"> Send </button>
+      </span> </div>
+  </div>
+  <!-- /.panel-footer --> 
+</div>
+<!-- /.panel .chat-panel -->
+<!-- <button class="btn btn-primary chatbtn"><i class="fa fa-comments"></i></button>
+<div class="feedback">
+  <button class="btn btn-primary feedbackbtn"><i class="fa  fa-comment-o"></i></button>
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <div class="page-header small">Hello, Lucky Sans,</div>
+      <div class="page-subtitle small">Please prvide your detailed feedback to us.</div>
+    </div>
+    <div class="panel-body">
+      <textarea class="form-control" placeholder="Write your feedback here"></textarea>
+    </div>
+    <div class="panel-footer">
+      <button class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+</div> -->
+
+
+    
+    
+
+
+  <!-- jQuery -->
+  <script src="%PUBLIC_URL%/js/jquery.min.js"></script>
+  <script src="%PUBLIC_URL%/js/bootstrap.min.js"></script>
+  <script src="%PUBLIC_URL%/js/jquery.dataTables.min.js"></script>
+  <script src="%PUBLIC_URL%/js/dataTables.boostrap.min.js"></script>
+  <script src="%PUBLIC_URL%/js/dataTables.responsive.js"></script>
+  <script src="%PUBLIC_URL%/js/raphael.js"></script>
+  <script src="%PUBLIC_URL%/js/morris.min.js"></script>
+  <script src="%PUBLIC_URL%/js/morris-data.js"></script>
+  <script src="%PUBLIC_URL%/js/jquery-jvectormap.js"></script>
+  <script src="%PUBLIC_URL%/js/jquery-jvectormap-world-mill-en.js"></script>
+  <script src="%PUBLIC_URL%/js/adminnine.js"></script>
+
+
+  <!-- Page-Level Demo Scripts - Tables - Use for reference -->
+  <script>
+    $(document).ready(function(){
+      $('#dataTables-userlist').DataTable({
+        responsive: true,
+        pageLength:10,
+        sPaginationType: "full_numbers",
+        oLanguage: {
+          oPaginate: {
+            sFirst: "<<",
+            sPrevious: "<",
+            sNext: ">",
+            sLast: ">>"
+          }
+        }
+      });
+
+      Morris.Bar({
+        element: 'morris-bar-chart2',
+        data: [
+          { y: '2006', a: 100, b: 100},
+          { y: '2007', a: 75,  b: 75 },
+          { y: '2008', a: 60 , b: 60 },
+          { y: '2009', a: 75 , b: 75 },
+          { y: '2006', a: 100, b: 100},
+          { y: '2007', a: 75,  b: 75 },
+          { y: '2008', a: 40,  b: 40 },
+          { y: '2009', a: 25,  b: 25 },
+          { y: '2006', a: 110, b: 110},
+          { y: '2007', a: 75,  b: 75 },
+          { y: '2008', a: 60,  b: 60 },
+          { y: '2009', a: 75,  b: 75 },
+          { y: '2012', a: 100, b: 100}
+        ],
+        resize: true,
+        axes:'',
+        hideHover: 'auto',
+        xkey: 'y',
+        padding:1,
+        ykeys: ['a', 'b'],
+        labels: ['Series A'],
+        barColors: ["#ffffff", "#cfdfed"]
+      });
+
+      $('#mapwrap').vectorMap({map: 'world_mill'});
+
+
+      $(window).resize(function(){
+
+        $('#dataTables-userlist').DataTable();
+
+      });
+
+    });
+  </script>
+
+  </body>
+</html>
