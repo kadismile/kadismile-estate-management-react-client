@@ -1,9 +1,12 @@
 language: node_js
-node_js:
+node_js: 
   - "stable"
 cache:
   directories:
-    - node_modules
+    - "node_modules"
+install:
+  - npm install
+
 # temporary workaround to skip tests durung build
 script:
 - echo "skipping tests"
